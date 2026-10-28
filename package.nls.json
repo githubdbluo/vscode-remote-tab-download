@@ -1,0 +1,4 @@
+{
+  "extension.description": "Download remote files directly from editor tabs to your computer, including files outside the workspace and custom editors such as spreadsheets.",
+  "command.download": "Download to Local…"
+}

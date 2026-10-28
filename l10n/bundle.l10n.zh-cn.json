@@ -1,0 +1,17 @@
+{
+  "Select a saved file tab or right-click its editor tab.": "请激活一个已保存文件的标签页，或在它的标签页上右键。",
+  "Select a file tab, not a directory.": "请选择文件标签页，不能下载目录。",
+  "This file has unsaved changes. Save it first to include them, or download the saved version.": "此文件有未保存的修改。如需包含最新修改，请先保存；也可以下载磁盘上的已保存版本。",
+  "Download Saved Version": "下载已保存版本",
+  "Download file to this computer": "下载文件到本机",
+  "Download": "下载",
+  "Select a local save path, not a remote directory.": "请选择本机保存路径，不能保存到远程目录。",
+  "Downloading {0}": "正在下载 {0}",
+  "Downloaded to: {0}": "已下载到：{0}",
+  "Show in Folder": "在文件夹中显示",
+  "Download failed: {0}": "下载失败：{0}",
+  "Select a local save path.": "请选择本机保存路径。",
+  "The destination must differ from the source file.": "保存位置不能与源文件相同。",
+  "Reading source file…": "正在读取源文件…",
+  "Writing local file…": "正在写入本机文件…"
+}

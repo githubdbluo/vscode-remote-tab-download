@@ -1,0 +1,4 @@
+{
+  "extension.description": "从编辑器标签页直接下载远程文件到本机，支持工作区外文件和 XLSX 等自定义编辑器。",
+  "command.download": "下载到本地…"
+}

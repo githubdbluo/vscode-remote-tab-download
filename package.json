@@ -1,0 +1,96 @@
+{
+  "name": "remote-tab-download",
+  "displayName": "Remote Tab Download",
+  "description": "%extension.description%",
+  "version": "1.0.0",
+  "publisher": "robin211737",
+  "author": {
+    "name": "githubdbluo"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/githubdbluo/vscode-remote-tab-download.git"
+  },
+  "homepage": "https://github.com/githubdbluo/vscode-remote-tab-download#readme",
+  "bugs": {
+    "url": "https://github.com/githubdbluo/vscode-remote-tab-download/issues"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "remote",
+    "download",
+    "ssh",
+    "tabs",
+    "wsl",
+    "devcontainers"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#10243A",
+    "theme": "dark"
+  },
+  "extensionKind": [
+    "ui"
+  ],
+  "main": "./src/extension.js",
+  "l10n": "./l10n",
+  "activationEvents": [
+    "onCommand:remoteTabDownload.download"
+  ],
+  "capabilities": {
+    "untrustedWorkspaces": {
+      "supported": true
+    },
+    "virtualWorkspaces": {
+      "supported": true
+    }
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "remoteTabDownload.download",
+        "title": "%command.download%",
+        "category": "Remote Tab Download"
+      }
+    ],
+    "menus": {
+      "editor/title/context": [
+        {
+          "command": "remoteTabDownload.download",
+          "when": "resourceScheme == vscode-remote || resourceScheme == file",
+          "group": "2_files@2"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "remoteTabDownload.download",
+          "when": "resourceScheme == vscode-remote && !explorerResourceIsFolder",
+          "group": "5b_importexport@11"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "4.0.0"
+  },
+  "files": [
+    "src/**",
+    "l10n/**",
+    "images/icon.png",
+    "package.nls*.json",
+    "README.md",
+    "README.zh-CN.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ]
+}
